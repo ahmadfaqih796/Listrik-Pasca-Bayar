@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    position: absolute;
+    z-index: -5;
+    padding: 5vh 0 0 0;
+    width: 100%;
+    height: 90vh;
+    background-color: turquoise;
+    background-image: url("../../gambar/server/Listrik-padam-PLN.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+section legend {
+    width: 50%;
+    background-color: whitesmoke;
+    font-size: 5vh;
+    font-family: 'pacifico';
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 40px 0 40px 0;
+    display: block;
+    width: 50%;
+    animation: fade 1s;
+    transition: all 1s ease-in-out;
+    padding: 2vh 0px 2vh 0px;
+    margin: 0 auto 5vh auto;
+}
+
+section .pln {
+    width: 30vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    right: -5%;
+}
+
+/* Scroll */
+/* width */
+::-webkit-scrollbar {
+    min-width: 30px;
+    min-height: 30px;
+}
+
+::-webkit-scrollbar-track {
+    margin: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 10px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #e41818;
+}
+/* pesan ketika ada session */
+.alert {
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: all 1s ease-in-out;
+}
+.sukses {
+    background-color: greenyellow;
+}
+.gagal {
+    background-color: red;
+}
+.closebtn {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.closebtn:hover {
+    color: whitesmoke;
+}
+
+@media (max-width: 1140px) {
+    section {
+        padding-top: 15vh;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:575px) {
+    section legend {
+        width: 95%;
+    }
+
+    section .pln {
+        display: none;
+    }
+}
